@@ -26,16 +26,20 @@ main{
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding-bottom: 50px;
     background-color: rgba(0, 0, 0, .7);
 }
 .winner>h1{
     color: #ffffff;
     margin: auto;
+}
+.winner>p{
+    cursor: pointer;
 }
 .popup-background{
     opacity: 1;
