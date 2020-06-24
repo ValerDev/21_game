@@ -69,3 +69,7 @@ const checkValue = async (id) =>{
     })
 
 }
+
+const replay = () =>{
+    location.reload()
+}
