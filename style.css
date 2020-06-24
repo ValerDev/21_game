@@ -1,0 +1,147 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    width:100%;
+    height:100%;
+    color: #ffffff;
+	background-color:#e5e5e5;
+	transition: .5s;
+}
+main{
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.winner{
+    display: none;
+    position: absolute;
+}
+.winner-open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+}
+.winner>h1{
+    color: #ffffff;
+    margin: auto;
+}
+.popup-background{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .7);
+}
+.hide{
+    opacity: 0;
+    transition: .5s ease-out ;
+}
+.popup-content{
+    width: 30%;
+    border-radius: 17px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.player-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.select{
+    cursor: pointer;
+    padding: 3em 2em;
+    background-color: #C2185B;
+    border-radius: 17px;
+    transition: .5s;
+}
+.select:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);        
+}
+.selected{    
+    pointer-events: none;
+    padding: 3em 2em;
+    border-radius: 17px;
+    background-color: #F06292;
+    box-shadow: none;
+}
+.start{
+    cursor: pointer;
+    margin-top: 10px; 
+    padding: 1em 1.2em;
+    transition: .5s;
+    background-color: #C2185B;
+    border-radius: 17px;
+}
+.start:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);        
+   
+}
+
+.number{
+    width: 100%;
+    height: 30%;
+    font-size: 150px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.players{
+    width: 100%;
+    height: 15em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.player{
+    border-radius: 17px;
+    padding: 0 20px;
+    height: 8em;
+    background-color: #F06292;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    opacity: .4;
+    justify-content: space-around;
+    pointer-events: none;
+}
+.current{
+    opacity: 1;
+    pointer-events: all;
+}
+.block{
+    opacity: .6!important;
+    pointer-events: none!important;
+}
+.add{
+    cursor: pointer;
+    padding: 1em 2em;
+    margin: 0 5px;
+    border-radius: 17px;
+    background-color: rgba(0,0,0,0.19);
+    transition: .3s;
+}
+.add:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);        
+
+}
